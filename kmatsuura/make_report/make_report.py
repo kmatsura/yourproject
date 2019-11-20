@@ -39,8 +39,8 @@ def output_work(work_list):
     print("="*30)
     for i in range(len(work_list)):
         print("作業日：" + work_list[i][0])
-        print("作業内容" + work_list[i][1])
-        print("備考" + work_list[i][2])
+        print("作業内容：" + work_list[i][1])
+        print("備考：" + work_list[i][2])
         print("-"*30)
 
         

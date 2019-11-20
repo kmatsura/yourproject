@@ -1,0 +1,284 @@
+kmatsuura@kmatsuura-HP-Stream-Notebook:~$ ls
+Desktop    Music         Public            get-pip.py
+Documents  Pictures      Templates         pluszero
+Downloads  Pipfile       Videos            snap
+Git        Pipfile.lock  examples.desktop  university
+kmatsuura@kmatsuura-HP-Stream-Notebook:~$ cd Git
+kmatsuura@kmatsuura-HP-Stream-Notebook:~/Git$ ls
+yourproject
+kmatsuura@kmatsuura-HP-Stream-Notebook:~/Git$ cd G
+-bash: cd: G: そのようなファイルやディレクトリはありません
+kmatsuura@kmatsuura-HP-Stream-Notebook:~/Git$ cd Gi
+-bash: cd: Gi: そのようなファイルやディレクトリはありません
+kmatsuura@kmatsuura-HP-Stream-Notebook:~/Git$
+kmatsuura@kmatsuura-HP-Stream-Notebook:~/Git$ git add .
+kmatsuura@kmatsuura-HP-Stream-Notebook:~/Git$ git commit -m "make_report"
+[master 1b99a50] make_report
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+kmatsuura@kmatsuura-HP-Stream-Notebook:~/Git$ git push origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+kmatsuura@kmatsuura-HP-Stream-Notebook:~/Git$ git remote
+kmatsuura@kmatsuura-HP-Stream-Notebook:~/Git$ cd yourproject/
+kmatsuura@kmatsuura-HP-Stream-Notebook:~/Git/yourproject$ git add .
+kmatsuura@kmatsuura-HP-Stream-Notebook:~/Git/yourproject$ git commit -m "m
+ake_report"
+[master f1fa601] make_report
+ 5 files changed, 534 insertions(+), 46 deletions(-)
+ create mode 100644 kmatsuura/make_report/.ipynb_checkpoints/make_report-c
+heckpoint.ipynb
+ create mode 100644 kmatsuura/make_report/make_report.ipynb
+ create mode 100644 kmatsuura/make_report/make_report.py
+kmatsuura@kmatsuura-HP-Stream-Notebook:~/Git/yourproject$ git push origin
+master
+fatal: unable to access 'https://github.com/kmatsuuraHMC/yourproject.git/'
+: Could not resolve host: github.com
+kmatsuura@kmatsuura-HP-Stream-Notebook:~/Git/yourproject$ git remote
+origin
+kmatsuura@kmatsuura-HP-Stream-Notebook:~/Git/yourproject$ git push origin
+master
+Username for 'https://github.com': bcdearth@gmail.com
+Password for 'https://bcdearth@gmail.com@github.com':
+Counting objects: 14, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (14/14), 3.07 KiB | 786.00 KiB/s, done.
+Total 14 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/kmatsuuraHMC/yourproject.git
+   a42081e..f1fa601  master -> master
+kmatsuura@kmatsuura-HP-Stream-Notebook:~/Git/yourproject$
+kmatsuura@kmatsuura-HP-Stream-Notebook:~/Git/yourproject$
+kmatsuura@kmatsuura-HP-Stream-Notebook:~/Git/yourproject$ ls
+kmatsuura
+kmatsuura@kmatsuura-HP-Stream-Notebook:~/Git/yourproject$ cd kmatsuura/
+kmatsuura@kmatsuura-HP-Stream-Notebook:~/Git/yourproject/kmatsuura$ l
+l: コマンドが見つかりません
+kmatsuura@kmatsuura-HP-Stream-Notebook:~/Git/yourproject/kmatsuura$ ls
+bin  make_report  make_table_markdown  sendgmail  test.txt
+kmatsuura@kmatsuura-HP-Stream-Notebook:~/Git/yourproject/kmatsuura$ cd mak
+e_report/
+kmatsuura@kmatsuura-HP-Stream-Notebook:~/Git/yourproject/kmatsuura/make_re
+port$ python3 make_report.py
+何をしますか？数字を入力してください。
+0：作業の登録
+1：作業の出力
+2：終了
+0
+作業内容を入力してください。
+作業用報告プログラムの作成
+備考を入力してください。
+下に詳詳細あり
+こちらでよろしいですか？(y/n)
+--------------------------------------------------
+作業日：2019-11-20
+作業内容：報告プログラムの作成
+備考：詳細あり
+--------------------------------------------------
+n
+入力を消去します
+何をしますか？数字を入力してください。
+0：作業の登録
+1：作業の出力
+2：終了
+0
+作業内容を入力してください。
+作業報告プログラムの作成
+備考を入力してください。
+詳細を後ろにあり
+こちらでよろしいですか？(y/n)
+--------------------------------------------------
+作業日：2019-11-20
+作業内容：作業報告プログラムの作成
+備考：詳細を後あり
+--------------------------------------------------
+y
+何をしますか？数字を入力してください。
+0：作業の登録
+1：作業の出力
+2：終了
+0
+作業内容を入力してください。
+床のゴミ拾い
+備考を入力してください。
+大きなゴミをひろう
+こちらでよろしいですか？(y/n)
+--------------------------------------------------
+作業日：2019-11-20
+作業内容：床のゴミ拾い
+備考：大きひろう
+--------------------------------------------------
+n
+入力を消去します
+何をしますか？数字を入力してください。
+0：作業の登録
+1：作業の出力
+2：終了
+0
+作業内容を入力してください。
+床のゴミ拾い
+備考を入力してください。
+
+こちらでよろしいですか？(y/n)
+--------------------------------------------------
+作業日：2019-11-20
+作業内容：床のゴミ拾い
+備考：
+--------------------------------------------------
+
+yまたはnを入力してください。
+y
+何をしますか？数字を入力してください。
+0：作業の登録
+1：作業の出力
+2：終了
+0
+作業内容を入力してください。
+掃除機をかける
+備考を入力してください。
+途中で掃除機が壊れてしまったため、半分程度しかかけれなかった
+こちらでよろしいですか？(y/n)
+--------------------------------------------------
+作業日：2019-11-20
+作業内容：掃除機をかける
+備考：途中で掃除機が壊れてしまったため、半分程度しかかけれなかった
+--------------------------------------------------
+y
+何をしますか？数字を入力してください。
+0：作業の登録
+1：作業の出力
+2：終了
+0
+作業内容を入力してください。
+黒板の掃除
+備考を入力してください。
+
+こちらでよろしいですか？(y/n)
+--------------------------------------------------
+作業日：2019-11-20
+作業内容：黒板の掃除
+備考：
+--------------------------------------------------
+y
+何をしますか？数字を入力してください。
+0：作業の登録
+1：作業の出力
+2：終了
+0
+作業内容を入力してください。
+黒板の下の棚の掃除
+備考を入力してください。
+
+こちらでよろしいですか？(y/n)
+--------------------------------------------------
+作業日：2019-11-20
+作業内容：黒板の下の棚の掃除
+備考：
+--------------------------------------------------
+y
+何をしますか？数字を入力してください。
+0：作業の登録
+1：作業の出力
+2：終了
+0
+作業内容を入力してください。
+ホワイトボードの掃除
+備考を入力してください。
+
+こちらでよろしいですか？(y/n)
+--------------------------------------------------
+作業日：2019-11-20
+作業内容：ホワイトボードの掃除
+備考：
+--------------------------------------------------
+y
+何をしますか？数字を入力してください。
+0：作業の登録
+1：作業の出力
+2：終了
+0
+作業内容を入力してください。
+ホワイトボード消しの掃除
+備考を入力してください。
+水で流しながら、スポンジでこすって見みたら消し味が復活した
+こちらでよろしいですか？(y/n)
+--------------------------------------------------
+作業日：2019-11-20
+作業内容：ホワイトボード消しの掃除
+備考：水で流しながら、スポンジでこすみたら消し味が復活した
+--------------------------------------------------
+n
+入力を消去します
+何をしますか？数字を入力してください。
+0：作業の登録
+1：作業の出力
+2：終了
+0
+作業内容を入力してください。
+ホワイトボード消しの掃除
+備考を入力してください。
+水で洗いながら、スポンジでこすってみたら消し味が復活した。
+こちらでよろしいですか？(y/n)
+--------------------------------------------------
+作業日：2019-11-20
+作業内容：ホワイトボード消しの掃除
+備考：水で洗いながら、スポンジでこすってみたら消し味が復活した。
+--------------------------------------------------
+y
+何をしますか？数字を入力してください。
+0：作業の登録
+1：作業の出力
+2：終了
+1
+清掃報告書
+--------------------------------------------------
+日時：2019-11-20
+文責：松浦健悟
+--------------------------------------------------
+==============================
+作業報告
+==============================
+作業日：2019-11-20
+作業内容作業報告プログラムの作成
+備考詳細を後あり
+------------------------------
+作業日：2019-11-20
+作業内容床のゴミ拾い
+備考
+------------------------------
+作業日：2019-11-20
+作業内容掃除機をかける
+備考途中で掃除機が壊れてしまったため、半分程度しかかけれなかった
+------------------------------
+作業日：2019-11-20
+作業内容黒板の掃除
+備考
+------------------------------
+作業日：2019-11-20
+作業内容黒板の下の棚の掃除
+備考
+------------------------------
+作業日：2019-11-20
+作業内容ホワイトボードの掃除
+備考
+------------------------------
+作業日：2019-11-20
+作業内容ホワイトボード消しの掃除
+備考水で洗いながら、スポンジでこすってみたら消し味が復活した。
+------------------------------
+何をしますか？数字を入力してください。
+0：作業の登録
+1：作業の出力
+2：終了
+2
+入力したdataを保存しますか？(y/n)
+y
+終了します。
+kmatsuura@kmatsuura-HP-Stream-Notebook:~/Git/yourproject/kmatsuura/make_re
+port$ tmux capture-pane -p -S -1000 > sample.txt
+kmatsuura@kmatsuura-HP-Stream-Notebook:~/Git/yourproject/kmatsuura/make_re
+port$ tmux capture-pane -p -S -10000 > sample.txt
+
