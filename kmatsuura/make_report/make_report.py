@@ -16,10 +16,10 @@ def register_work(work_list):
     k = 0
     while k == 0:
         i = input()
-        if i == "y":
+        if (i == "y" or i == "ｙ"):
             work_list.append([dt[:10], work, bikou])
             k = 1
-        elif i == "n":
+        elif (i == "n" or i == "ｎ"):
             print("入力を消去します")
             k = 1
         else:
@@ -59,22 +59,33 @@ if __name__ == '__main__':
         print("何をしますか？数字を入力してください。")
         print("0：作業の登録")
         print("1：作業の出力")
-        print("2：終了")
-        order = int(input())
+        print("2：作業内容の書き込み")
+        print("3：終了")
+        
+        try:
+            order = int(input())
+        except:
+            order = 10
+            continue
         if order == 0:
             register_work(work_list)
         elif order == 1:
             output_work(work_list)
         elif order == 2:
+            dt = str(datetime.datetime.now())
+            filename = str(dt[:10]) + "_work.txt"
+            write_data_to_txt(filename)
+            print("{}という名前でデータを保存しました。".format(filename))    
+        elif order == 3:
             print("入力したdataを保存しますか？(y/n)")
             hozon = input()
-            if hozon == "y":
+            if (hozon == "y" or hozon == "ｙ"):
                 dt = str(datetime.datetime.now())
                 filename = str(dt[:10]) + "_work.txt"
                 write_data_to_txt(filename)
                 print("終了します。")
                 state = 0
-            elif hozon == "n":
+            elif (hozon == "n" or hozon == "ｎ"):
                 print("終了します。")
                 state = 0
             else:
